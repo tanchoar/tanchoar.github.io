@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.shopping_card {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    min-height: 500px;
+    min-width: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.photo_section {
+    display: flex;
+    min-width: 300px;
+}
+
+.smallphotos img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.smallphotos img:hover,
+.numbers div:hover {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.bigphoto img {
+    margin-left: 30px;
+    height: 500px;
+}
+
+.description_section {
+    margin-left: 30px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.product_header,
+.current_size,
+.numbers {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_header h2 {
+    font-size: 1.2rem;
+}
+
+.kargoinfo {
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    width: 70px;
+    text-align: center;
+}
+
+.product_rateprice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.product_rateprice p img {
+    height: 20px;
+    margin-left: 3px;
+    align-items: center;
+}
+
+.price {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.price p {
+    margin-right: 5px;
+}
+
+.discount p {
+    margin-left: 5px;
+}
+
+.discount::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: black;
+}
+
+.discount-price {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.satici p span {
+    background: black;
+    color: white;
+    border-radius: 2px;
+    padding: 0.1rem 0.3rem;
+    font-size: 0.8rem;
+}
+
+a {
+    color: black;
+    font-size: 0.8rem;
+}
+
+.productname,
+.satici,
+.sizes,
+.numbers div,
+.productinfo {
+    padding: 0.3rem;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+}
+
+.favori {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-left: 10px;
+    padding: 0.4rem;
+    border-radius: 5px;
+}
+
+.favori img {
+    height: 30px;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center;
+}
+
+.satici {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.numbers {
+    padding: 0.5rem;
+    width: 170px;
+    cursor: pointer;
+}
+
+.addbutton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addbutton button {
+    flex: 1;
+    padding: 1rem 5rem;
+    background: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1.8px solid orange;
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+
+.addbutton button:hover {
+    background:gray;
+}
+
+.deliverydate {
+    margin-top: 5px;
+    display: flex;
+    font-size: 0.7rem;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem;
+}
+
+.productinfo {
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+.bordersize {
+    border: 1px solid black;
+}
